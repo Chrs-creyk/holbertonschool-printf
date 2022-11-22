@@ -5,7 +5,7 @@ int _printf(const char *format, ...)
 	va_list list;
 	int redic = 0;
 
-	fmt_t cases[] = {
+	tds_t cases[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"d", print_number},
