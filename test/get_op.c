@@ -1,6 +1,6 @@
 #include "main.h"
 
-int print_op(const char *format, fmt_t *print_arr, va_list list)
+int print_op(const char *format, tds_t *print_arr, va_list list)
 {
     char x;
     int count = 0, y = 0, z = 0;
