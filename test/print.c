@@ -1,43 +1,21 @@
 #include "main.h"
 
-int comp(char n, ...)
-{
-	va_list format;
-	char x = 126;
-	char letra = 32;
-
-	va_start(format, n);
-
-	while (letra < x)
-	{
-		if (letra == n)
-			return (letra);
-		letra++;
-	}
-	va_end (format);
-	return (0);
-}
-int _strlen(void)
-{
-	int lenght = 0;
-
-	while (lenght != '\0')
-	{
-		lenght++;
-	}
-	return (lenght);
-}
-
 int _printf(const char *format, ...)
 {
-	int x = 0, y = 0;
+	va_list list;
+	int redic = 0;
 
-	x = strlen(format);
+	fmt_t cases[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{"d", print_number},
+		{"i", print_number},
+		{NULL, NULL}};
 
-	while (y < x)
-	{
-		write(comp);
-		y++;
-	}
-	return (0);
+	if (format == NULL)
+		return (-1);
+	va_start(list, format);
+	redic = print_op(format, cases, list);
+	va_end(list);
+	return (redic);
 }
