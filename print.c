@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * _printf - printer
-*/
+ * @format: formats
+ * Return: formatted
+ */
 
 int _printf(const char *format, ...)
 {
