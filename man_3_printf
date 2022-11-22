@@ -1,4 +1,5 @@
 .\" Manpage for _printf.
+.TH _printf Manpage
 .SH NAME
 _printf \- read and print arguments acording a opertion.
 .SH SYNOPSIS
