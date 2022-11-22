@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_char - funtion to print char
+ * @ch: character variable
+ *
+ *
+ */
 
 int print_char(va_list ch)
 {
@@ -9,6 +15,11 @@ int print_char(va_list ch)
 	write(1, &c, 1);
 	return (1);
 }
+
+/**
+ * print_string - function for print strings
+ * @str: string variable
+ */
 
 int print_string(va_list str)
 {
@@ -28,7 +39,10 @@ int print_string(va_list str)
 	write(1, s, j);
 	return (j);
 }
-
+/**
+ * print_number - function for print numbers
+ * @totals: total numbers
+ */
 int print_number(va_list totals)
 {
 	int n = va_arg(totals, int), n2 = n, n3 = n, j = 0, i = 0, dig_count = 0;
