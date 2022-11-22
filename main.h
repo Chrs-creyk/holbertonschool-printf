@@ -9,8 +9,8 @@
 
 typedef struct tds
 {
-    char *type;
-    int (*f)();
+	char *type;
+	int (*f)();
 } tds_t;
 int _printf(const char *format, ...);
 int print_op(const char *format, tds_t *print_arr, va_list cases);
