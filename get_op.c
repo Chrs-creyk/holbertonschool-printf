@@ -3,6 +3,7 @@
  * print_op - function selector
  * @format: punter with the format
  * @print_arr: array printer
+ * @list: list
  * Return: int number
  */
 int print_op(const char *format, tds_t *print_arr, va_list list)
