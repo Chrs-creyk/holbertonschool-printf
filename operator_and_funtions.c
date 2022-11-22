@@ -2,8 +2,7 @@
 /**
  * print_char - funtion to print char
  * @ch: character variable
- *
- *
+ * Return: int value
  */
 
 int print_char(va_list ch)
@@ -19,6 +18,7 @@ int print_char(va_list ch)
 /**
  * print_string - function for print strings
  * @str: string variable
+ * Return: int value
  */
 
 int print_string(va_list str)
@@ -42,6 +42,7 @@ int print_string(va_list str)
 /**
  * print_number - function for print numbers
  * @totals: total numbers
+ * Return: number
  */
 int print_number(va_list totals)
 {
