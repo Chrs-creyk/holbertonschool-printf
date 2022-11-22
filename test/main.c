@@ -1,13 +1,26 @@
-#include <limits.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Return: Always 0
+ * Return: 0 on success, error code otherwise
  */
 int main(void)
 {
-    _printf("Let's try to printf a simple sentence.\n");
+    int len, len2;
+
+    len = _printf("%d\n", 1024);
+    len2 = printf("%d\n", 1024);
+    fflush(stdout);
+    if (len != len2)
+    {
+        printf("%d\n", len);
+        printf("%d\n", len2);
+        printf("Lengths differ.\n");
+        fflush(stdout);
+        return (1);
+    }
+    return (0);
 }
