@@ -1,4 +1,8 @@
-printf Project
+<html>
+<body>
+<h1>PRINTF PROJECT</h1>
+<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="auto"/>
+<hr> printf Project
 
 -This printf project was to make a coding function called "_printf()" that is similar to printf() in what it supposed to do. Here's a link if you would like to read about formating and functions on printf: (https://man7.org/linux/man-pages/man3/printf.3.html)
 
