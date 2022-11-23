@@ -1,7 +1,6 @@
 <html>
 <body>
-<h1>PRINTF PROJECT</h1>
-<img src= "https://i.ytimg.com/vi/mZFdyoZhUb4/maxresdefault.jpg" width="300" height="auto"/>
+<h1>"_PRINTF" PROJECT</h1>
 <hr> printf Project
 
 -This printf project was to make a coding function called "_printf()" that is similar to printf() in what it supposed to do. Here's a link if you would like to read about formating and functions on printf: (https://man7.org/linux/man-pages/man3/printf.3.html)
@@ -14,9 +13,7 @@ int _printf(const char *format, ...);
 
 -The table set below are a number of specifiers that the original printf can use. Ours can only use at the moment d, i, s, c and %.
 Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
-
-image
-
+\n
 EXAMPLES
 Use: _printf("%d", 8);
 Output: 8
@@ -25,15 +22,16 @@ Output: h
 FILE FUNCTIONS
 _printf.c
 Our printf function is stored here. This performs just as the original that prints any data given to it.
-
+\n
 main.h
 This a header file. It includes all prototypes functions used.
-
+\n
 Return values
 On succes should give the correct integer.
-
+\n
 Return (0);
-
+\n
 AUTHORS
 Jerson Riascos 5828
+\n
 Cristhian Jurado 5860
