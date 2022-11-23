@@ -1,5 +1,4 @@
 printf Project
-November / 2021
 
 -This printf project was to make a coding function called "_printf()" that is similar to printf() in what it supposed to do. Here's a link if you would like to read about formating and functions on printf: (https://man7.org/linux/man-pages/man3/printf.3.html)
 
@@ -9,7 +8,8 @@ The prototype used is the following:
 
 int _printf(const char *format, ...);
 
--The table set below are a number of specifiers that the original printf can use. Ours can only use at the moment d, i, s, c and %. Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
+-The table set below are a number of specifiers that the original printf can use. Ours can only use at the moment d, i, s, c and %.
+Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
 
 image
 
@@ -31,3 +31,5 @@ On succes should give the correct integer.
 Return (0);
 
 AUTHORS
+Jerson Riascos 5828
+Cristhian Jurado 5860
