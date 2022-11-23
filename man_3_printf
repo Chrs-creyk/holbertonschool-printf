@@ -1,7 +1,7 @@
 .\" Manpage for _printf.
 .TH _printf Manpage
 .SH NAME
-_printf \- read and print arguments acording a opertion.
+_printf \- read and print arguments acording a to a case.
 .SH SYNOPSIS
 _printf [USERNAME]
 .SH DESCRIPTION
