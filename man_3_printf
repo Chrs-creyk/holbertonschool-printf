@@ -19,7 +19,7 @@ _printf - format and print data.
 .SH NOTE: 
     This is a pseudo command inspired in printf, as such, this command does not have all formats printf possesses
 .SH BUGS
-No known bugs.
+    No known bugs.
 .SH AUTHOR
-Jerson Riascos 5828
-Cristhian Jurado 5860
+    Jerson Riascos 5828
+    Cristhian Jurado 5860
