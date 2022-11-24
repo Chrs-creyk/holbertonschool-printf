@@ -18,5 +18,6 @@ int print_char(va_list ch);
 int print_string(va_list str);
 int print_number(va_list nums);
 int print_binary(va_list totals);
+int print_octal(va_list nums);
 
 #endif
