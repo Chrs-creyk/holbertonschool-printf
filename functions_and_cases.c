@@ -46,7 +46,7 @@ int print_string(va_list str)
  */
 int print_number(va_list nums)
 {
-	int n = va_arg(totals, int), n2 = n, n3 = n, j = 0, i = 0, dig_count = 0;
+	int n = va_arg(nums, int), n2 = n, n3 = n, j = 0, i = 0, dig_count = 0;
 	char num[] = "12345678910", dig;
 
 	if (n == 0)
