@@ -41,4 +41,4 @@ Return (0);
 
 FLOWCHART:
 
-![](https://app.code2flow.com/otPWlwZSodxJ)
+<img src=https://i.imgur.com/rNOiVsa.png>
