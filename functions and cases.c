@@ -88,9 +88,9 @@ int print_number(va_list totals)
 	return (dig_count);
 }
 
-int print_binary(va_list totals)
+int print_binary(va_list nums)
 {
-	unsigned int n = va_arg(totals, unsigned int), n2 = n, n3 = n, j = 0, i = 0, dig_count = 0;
+	unsigned int n = va_arg(nums, unsigned int), n2 = n, n3 = n, i = 0, dig_count = 0;
 	char num[33], dig;
 
 	do

@@ -30,8 +30,6 @@ On succes should give the correct integer.
 
 Return (0);
 
-AUTHORS
+FLOWCHART:
 
-Jerson Riascos 5828
-
-Cristhian Jurado 5860
+https://app.code2flow.com/otPWlwZSodxJ
