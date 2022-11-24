@@ -41,10 +41,10 @@ int print_string(va_list str)
 }
 /**
  * print_number - function to print numbers
- * @totals: list
+ * @nums: list
  * Return: space
  */
-int print_number(va_list totals)
+int print_number(va_list nums)
 {
 	int n = va_arg(totals, int), n2 = n, n3 = n, j = 0, i = 0, dig_count = 0;
 	char num[] = "12345678910", dig;
@@ -89,15 +89,15 @@ int print_number(va_list totals)
 }
 /**
  * print_binary - function to print binary numbers
- * @nums: list
+ * @numsb: list
  * Return: space
  */
-int print_binary(va_list nums)
+int print_binary(va_list numsb)
 {
 	unsigned int n, n2, i = 0, dig_count = 0;
 	char num[33], dig, aux[33];
 
-	n = va_arg(nums, unsigned int);
+	n = va_arg(numsb, unsigned int);
 	n2 = n;
 	do {
 		dig = (n2 % 2) + '0';
@@ -114,101 +114,24 @@ int print_binary(va_list nums)
 	}
 	return (dig_count);
 }
-int print_octal(va_list nums)
+/**
+ * print_octal - function to print octal numbers
+ * @numso: list
+ * Return: space
+ */
+int print_octal(va_list numso)
 {
 	unsigned int n, n2, i = 0, dig_count = 0;
 	char num[33], dig, aux[33];
 
-	n = va_arg(nums, unsigned int);
+	n = va_arg(numso, unsigned int);
 	n2 = n;
-	do
-	{
+	do {
 		dig = (n2 % 8) + '0';
 		aux[i] = dig;
 		i++;
 		dig_count++;
 		n2 = n2 / 8;
-	} while (n2 != 0);
-	i = 0;
-	for (; i < dig_count; i++)
-	{
-		num[i] = aux[dig_count - i - 1];
-		write(1, &num[i], 1);
-	}
-	return (dig_count);
-}
-int print_unsigned(va_list nums)
-{
-	unsigned int n, n2, i = 0, dig_count = 0;
-	char num[33], dig, aux[33];
-
-	n = va_arg(nums, unsigned int);
-	n2 = n;
-	do
-	{
-		dig = (n2 % 10) + '0';
-		aux[i] = dig;
-		i++;
-		dig_count++;
-		n2 = n2 / 10;
-	} while (n2 != 0);
-	i = 0;
-	for (; i < dig_count; i++)
-	{
-		num[i] = aux[dig_count - i - 1];
-		write(1, &num[i], 1);
-	}
-	return (dig_count);
-}
-int print_hexa(va_list nums)
-{
-	int x;
-	unsigned int n, n2, i = 0, dig_count = 0, numa[17] = {10, 11, 12, 13, 14, 15};
-	char num[17], dig, aux[17] = {'a', 'b', 'c', 'd', 'e', 'f'};
-
-	n = va_arg(nums, unsigned int);
-	n2 = n;
-	do
-	{
-		dig = (n2 % 16) + '0';
-		for (x = 0; numa[x] != '\0'; x++)
-		{
-			if ((n2 % 16) == numa[x])
-				dig = aux[x];				
-		}
-		aux[i] = dig;
-		i++;
-		dig_count++;
-		n2 = n2 / 16;
-	} while (n2 != 0);
-	i = 0;
-	for (; i < dig_count; i++)
-	{
-		num[i] = aux[dig_count - i - 1];
-		write(1, &num[i], 1);
-	}
-	return (dig_count);
-}
-int print_HEXA(va_list nums)
-{
-	int x;
-	unsigned int n, n2, i = 0, dig_count = 0, numa[17] = {10, 11, 12, 13, 14, 15};
-	char num[17], dig, aux[17] = {'A', 'B', 'C', 'D', 'E', 'F'};
-
-	n = va_arg(nums, unsigned int);
-	n2 = n;
-	do
-	{
-		dig = (n2 % 16) + '0';
-		for (x = 0; numa[x] != '\0'; x++)
-		{
-			if ((n2 % 16) == numa[x])
-				dig = aux[x];
-		}
-		aux[i] = dig;
-		i++;
-		dig_count++;
-		n2 = n2 / 16;
 	} while (n2 != 0);
 	i = 0;
 	for (; i < dig_count; i++)
