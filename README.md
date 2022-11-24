@@ -15,13 +15,13 @@ Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
 
 EXAMPLE
 
-int main()
+        int main()
 
-  {
+        {
 
-_printf(“%d”, 8008135);
+        _printf(“%d”, 8008135);
   
-  }
+         }
 
 Output:
 
