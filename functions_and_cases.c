@@ -160,3 +160,31 @@ int print_unsigned(va_list nums)
 	}
 	return (dig_count);
 }
+int print_hexa(va_list nums)
+{
+	unsigned int n, n2, i = 0, dig_count = 0;
+	char num[17], numa[17] = {10, 11, 12, 13, 14, 15}, dig, aux[17] = {'a', 'b', 'c', 'd', 'e', 'f'};
+
+	n = va_arg(nums, unsigned int);
+	n2 = n;
+	do
+	{
+		dig = (n2 % 16) + '0';
+		for (int x = 0; numa[x] != '\0'; x++)
+		{
+			if ((n2 % 16) == numa[x])
+				dig = aux[x];				
+		}
+		aux[i] = dig;
+		i++;
+		dig_count++;
+		n2 = n2 / 16;
+	} while (n2 != 0);
+	i = 0;
+	for (; i < dig_count; i++)
+	{
+		num[i] = aux[dig_count - i - 1];
+		write(1, &num[i], 1);
+	}
+	return (dig_count);
+}
