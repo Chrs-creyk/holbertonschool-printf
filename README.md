@@ -14,7 +14,7 @@ int _printf(const char *format, ...);
 Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
 
 EXAMPLES
-Use: _printf("%d", 8);
+Use: _printf("%d", 8);\n
 Output: 8
 Use: _printf("%c", h)
 Output: h
