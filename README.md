@@ -13,11 +13,17 @@ int _printf(const char *format, ...);
 -The table set below are a number of specifiers that the original printf can use. Ours can only use at the moment d, i, s, c and %.
 Image can be found here: (https://www.cplusplus.com/reference/cstdio/printf/)
 
-EXAMPLES
-Use: _printf("%d", 8);\n
-Output: 8
-Use: _printf("%c", h)
-Output: h
+EXAMPLE
+
+int main()
+    {
+        _printf("%d", 8008135)
+    }
+
+Output:
+
+        8008135
+
 FILE FUNCTIONS
 _printf.c
 Our printf function is stored here. This performs just as the original that prints any data given to it.
