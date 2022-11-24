@@ -28,7 +28,9 @@ Output:
         8008135
 
 FILE FUNCTIONS
+
 _printf.c
+
 Our printf function is stored here. This performs just as the original that prints any data given to it.
 
 main.h
