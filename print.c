@@ -19,6 +19,7 @@ int _printf(const char *format, ...)
 		{"u", print_unsigned},
 		{"o", print_octal},
 		{"x", print_hexa},
+		{"X", print_HEXA},
 		{NULL, NULL}};
 
 	if (format == NULL)

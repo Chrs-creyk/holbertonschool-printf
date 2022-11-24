@@ -21,5 +21,6 @@ int print_binary(va_list totals);
 int print_octal(va_list nums);
 int print_unsigned(va_list nums);
 int print_hexa(va_list nums);
+int print_HEXA(va_list nums);
 
 #endif

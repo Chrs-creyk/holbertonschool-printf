@@ -11,7 +11,7 @@ int main(void)
 {
     int len, len2;
 
-    len = _printf("%x", 450);
+    len = _printf("%X", 450);
     len2 = printf("%X", 450);
     fflush(stdout);
     if (len != len2)
